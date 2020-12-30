@@ -259,7 +259,7 @@ Netbios Information Scanning
 
 Manual NetBIOS Commands
 > $ enumdomusers
-> $ enumdomprinters
+> $ enumprinters
 
 Nmap find exposed Netbios servers
 
