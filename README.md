@@ -52,7 +52,7 @@ DNS Zone Transfers:
 
 > $ host -l domain &gt; $ip $ dnsrecon -d [megacorpone.com](http://megacorpone.com) -t axfr  
 > $ dnsenum [zonetransfer.me](http://zonetransfer.me)
-
+> $ dig axfr @$ip rootdomain.tld
 ## FTP
 
 Vulnerability Scanning
@@ -257,6 +257,10 @@ Netbios Information Scanning
 
 > $ nbtscan -r &gt; $ip/24
 
+Manual NetBIOS Commands
+> $ enumdomusers
+> $ enumdomprinters
+
 Nmap find exposed Netbios servers
 
 > $ nmap -sU --script nbstat.nse -p 137 &gt; $ip
@@ -271,6 +275,7 @@ Enumeration Tools
 
 > $ Onesixtyone – c &lt;community list file&gt; -I &lt;ip-address&gt;  
 > $ Snmpwalk -c &lt;community string&gt; -v&lt;version&gt; &gt; $ip 1.3.6.1.2.1.25.4.2.1.2 $ snmp-check &gt; $ip
+> $ snmpcheck $ip
 
 Default Community Names:
 
